@@ -1,0 +1,22 @@
+.description
+{
+    margin-bottom: 1000px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;    
+}
+.description h2
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.description p
+{
+    text-align: justify;   
+}
+.carousel
+{
+    width:1200px;
+}
