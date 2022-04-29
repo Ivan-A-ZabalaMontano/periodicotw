@@ -50,122 +50,147 @@
                     </div>
                 </nav>
             </header>
+            <div class="container">
+              <div class="buttons" style="color:blue">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" v-on:click="chanveVisibility1" checked>
+                  <label class="form-check-label" for="inlineCheckbox1">Ofertas de servicio</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" v-on:click="chanveVisibility2">
+                  <label class="form-check-label" for="inlineCheckbox2">Compra y ventas de producto</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" v-on:click="chanveVisibility3">
+                  <label class="form-check-label" for="inlineCheckbox3">Ventas de inmueble</label>
+                </div>
+              </div>
+            </div>
+            
+            
+             
             <section class="container">
+              <div class="container p-3 my-3" v-if="mostrar1">
                 <div id="servicios">
-                    <h2>Oferta de servicios</h2>
-                    <div class="row mt-4">
-                        <div class="col">
-                            <h2>Plomero</h2>
-                            <dt>63089084.</dt>
-                        </div>
-                        <div class="col">
-                            <h2>Electricista</h2>
-                            <dt>reparaciones instalaciones 72551771.</dt>
-                        </div>
-                        <div class="col">
-                            <h2>Sastre</h2>
-                            <dt>costura medidas 74551771.</dt>
-                        </div>
-                        <div class="col">
-                            <h2>Chofer</h2>
-                            <dt>46546545.</dt>
-                        </div>
-                        <div class="col">
-                            <h2>Mecanico</h2>
-                            <dt>reparaciones repuestos pintura 6454564.</dt>
-                        </div>
-                        <div class="col">
-                            <h2>Servicio Domestico</h2>
-                            <dt>limpieza cuidado cocina 4654654631.</dt>
-                        </div>
+                  <h2>Oferta de servicios</h2>
+                  <div class="row mt-4">
+                      <div class="col">
+                          <h2>Plomero</h2>
+                          <dt>63089084.</dt>
+                      </div>
+                      <div class="col">
+                          <h2>Electricista</h2>
+                          <dt>reparaciones instalaciones 72551771.</dt>
+                      </div>
+                      <div class="col">
+                          <h2>Sastre</h2>
+                          <dt>costura medidas 74551771.</dt>
+                      </div>
+                      <div class="col">
+                          <h2>Chofer</h2>
+                          <dt>46546545.</dt>
+                      </div>
+                      <div class="col">
+                          <h2>Mecanico</h2>
+                          <dt>reparaciones repuestos pintura 6454564.</dt>
+                      </div>
+                      <div class="col">
+                          <h2>Servicio Domestico</h2>
+                          <dt>limpieza cuidado cocina 4654654631.</dt>
+                      </div>
+                  </div>
+              </div>
+             </div>
+             <div class="container p-3 my-3" v-if="mostrar2">
+              <div id="Compra y venta de productos">
+                <h2>Compra</h2>
+                <div class="row">
+                    <div class="col">
+                        <h2>Aspiradora</h2>
+                        <dt>Contacto: 4654651321</dt>
+                        <p>Se busca aspiradora en buen estado.</p>
+                    </div>
+                    <div class="col">
+                        <h2>Laptop</h2>
+                        <dt>Contacto: 41654165465</dt>
+                        <p>Busco una laptop economica pero en buen estado y con rendimiento aceptable.</p>
+                    </div>
+                    <div class="col">
+                        <h2>Celular</h2>
+                        <dt>Contacto: jp@gmail.com</dt>
+                        <p>Busco celular debido a inconvenientes ocurridos, no importa el precio.</p>
                     </div>
                 </div>
-                <div id="Compra y venta de productos">
-                    <h2>Compra</h2>
-                    <div class="row">
-                        <div class="col">
-                            <h2>Aspiradora</h2>
-                            <dt>Contacto: 4654651321</dt>
-                            <p>Se busca aspiradora en buen estado.</p>
-                        </div>
-                        <div class="col">
-                            <h2>Laptop</h2>
-                            <dt>Contacto: 41654165465</dt>
-                            <p>Busco una laptop economica pero en buen estado y con rendimiento aceptable.</p>
-                        </div>
-                        <div class="col">
-                            <h2>Celular</h2>
-                            <dt>Contacto: jp@gmail.com</dt>
-                            <p>Busco celular debido a inconvenientes ocurridos, no importa el precio.</p>
-                        </div>
+                <h2>Venta</h2>
+                <div class="row">
+                    <div class="col">
+                        <h2>AUDÍFONOS SAMSUNG</h2>
+                        <img src="resources/images/venta1.jpg">
+                        <h3>Precio Bs. 30</h3>
                     </div>
-                    <h2>Venta</h2>
-                    <div class="row">
-                        <div class="col">
-                            <h2>AUDÍFONOS SAMSUNG</h2>
-                            <img src="resources/images/venta1.jpg">
-                            <h3>Precio Bs. 30</h3>
-                        </div>
-                        <div class="col">
-                            <h2>CUCHILLO DE PAN</h2>
-                            <img src="resources/images/venta2.png">
-                            <h3>Precio Bs. 15</h3>
-                        </div>
-                        <div class="col">
-                            <h2>SAHUMERIO</h2>
-                            <img src="resources/images/venta3.jpg">
-                            <h3>Precio Bs. 10</h3>
-                        </div>
+                    <div class="col">
+                        <h2>CUCHILLO DE PAN</h2>
+                        <img src="resources/images/venta2.png">
+                        <h3>Precio Bs. 15</h3>
+                    </div>
+                    <div class="col">
+                        <h2>SAHUMERIO</h2>
+                        <img src="resources/images/venta3.jpg">
+                        <h3>Precio Bs. 10</h3>
                     </div>
                 </div>
-                <div id="inmuebles">
-                    <h2>Venta de inmuebles</h2>
-                    <div class="row">
-                        <div class="col">
-                            <h2>Servicio</h2>
-                            <img src="resources/images/in1.jpg">
-                            <h3>Precio USD.  115.000</h3>
-                            <dt>Actualizado:
-                                13/12/15</dt>
-                            <dt>Habitaciones:
-                                7</dt>
-                            <dt>Baños:
-                                2
-                                </dt>
-                            <dt>Sup. Terreno:
-                                222m2</dt>
-                        </div>
-                        <div class="col">
-                            <h2>Servicio</h2>
-                            <img src="resources/images/in2.jpg">
-                            <h3>Precio USD.  385.000</h3>
-                            <dt>Actualizado:
-                                12/10/22</dt>
-                            <dt>Habitaciones:
-                                8</dt>
-                            <dt>Baños:
-                                3
-                                </dt>
-                            <dt>Sup. Terreno:
-                                326m2</dt>
-                        </div>
-                        <div class="col">
-                            <h2>Servicio</h2>
-                            <img src="resources/images/in3.jpg">
-                            <h3>Precio USD.  185.000</h3>
-                            <dt>Actualizado:
-                                18/12/20</dt>
-                            <dt>Habitaciones:
-                                5</dt>
-                            <dt>Baños:
-                                2
-                                </dt>
-                            <dt>Sup. Terreno:
-                                246m2</dt>
-                        </div>
+            </div>
+        
+            </div>
+            <div class="container p-3 my-3" v-if="mostrar3">
+              <div id="inmuebles">
+                <h2>Venta de inmuebles</h2>
+                <div class="row">
+                    <div class="col">
+                        <h2>Servicio</h2>
+                        <img src="resources/images/in1.jpg">
+                        <h3>Precio USD.  115.000</h3>
+                        <dt>Actualizado:
+                            13/12/15</dt>
+                        <dt>Habitaciones:
+                            7</dt>
+                        <dt>Baños:
+                            2
+                            </dt>
+                        <dt>Sup. Terreno:
+                            222m2</dt>
                     </div>
-
+                    <div class="col">
+                        <h2>Servicio</h2>
+                        <img src="resources/images/in2.jpg">
+                        <h3>Precio USD.  385.000</h3>
+                        <dt>Actualizado:
+                            12/10/22</dt>
+                        <dt>Habitaciones:
+                            8</dt>
+                        <dt>Baños:
+                            3
+                            </dt>
+                        <dt>Sup. Terreno:
+                            326m2</dt>
+                    </div>
+                    <div class="col">
+                        <h2>Servicio</h2>
+                        <img src="resources/images/in3.jpg">
+                        <h3>Precio USD.  185.000</h3>
+                        <dt>Actualizado:
+                            18/12/20</dt>
+                        <dt>Habitaciones:
+                            5</dt>
+                        <dt>Baños:
+                            2
+                            </dt>
+                        <dt>Sup. Terreno:
+                            246m2</dt>
+                    </div>
                 </div>
+            </div>
+            </div>
             </section>
         </div>
         <script>
@@ -177,11 +202,22 @@
             nav2:'Servicios',
             nav3:'Clasificados',
             nav4:'Contactos',
+            mostrar1:true,
+            mostrar2:false,
+            mostrar3:false
           }
         },
         methods:
         {
-
+          chanveVisibility1: function (){
+                  this.mostrar1 =! this.mostrar1
+               },
+               chanveVisibility2: function (){
+                  this.mostrar2 =! this.mostrar2
+               },
+               chanveVisibility3: function (){
+                   this.mostrar3 =! this.mostrar3
+               }
         }
       }).mount('#app')
     </script>
