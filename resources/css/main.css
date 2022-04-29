@@ -2,7 +2,7 @@
 .body
 {
     font-family: 'Roboto Slab',serif;
-    background-color: rgb(22, 22, 22);
+    background: linear-gradient(90deg,#5e1925 50%, #055523 50%);
     overflow-x: hidden;
 }
 .frames {
